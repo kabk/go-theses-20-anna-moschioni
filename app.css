@@ -1,0 +1,189 @@
+body {
+    background: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+  z-index: 2;
+  margin: 1%;
+  padding: 1%;
+
+  top: 1%;
+  left: 10%;
+
+  font-family: Helvetica;
+  position: absolute;
+  color: white;
+  font-size: 10vh;
+  line-height: 10vh;
+  transform-origin: 0% 0%;
+
+}
+
+@keyframes moveright {
+  from {left: 49%}
+  to { left: 99%}
+
+}
+
+
+.halfopacity{
+  color: #373737;
+  mix-blend-mode: screen;
+
+}
+
+.halfopacity_info{
+  opacity: .7;
+  mix-blend-mode: screen;
+
+}
+
+.halfopacity_info:hover{
+  opacity: 1;
+  mix-blend-mode: normal;
+
+}
+
+
+
+.infobuttonbox{
+  z-index: 3;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  height: 4%;
+  width: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.infobuttonbox:hover{
+
+}
+
+
+
+.infobox_container{
+  position: absolute;
+  z-index: 1;
+  background-color:rgba(0, 0, 0, 1);
+  color: white;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.infobox{
+  position: absolute;
+  left:0.7%;
+  top: 125px;
+  width:100%;
+  height: 100%;
+
+
+}
+
+
+.infotext{
+  margin: 0px;
+  padding: 0px;
+  font-family: Caslon540reg;
+  font-weight: normal;
+  color: white;
+  font-size: 4vw;
+  line-height: 4vw;
+
+}
+
+.infobuttonimage{
+  position: absolute;
+  width: 100%;
+  transform: rotate(-25deg);
+}
+
+.infobuttontext {
+  margin: 0px;
+  margin-top: -3px;
+  padding: 0px;
+  position: absolute;
+  color: white;
+  font-family: Helvetica;
+  font-size: 4vw;
+
+
+}
+
+
+.videocontainer1 {
+
+    display: inline-block;
+    top:0vh;
+    /* position: fixed;
+    left: 0vw; */
+    height: 100%;
+    width: 100%;
+    position: center;
+    background: black;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    /* height: : 100vw; */
+    /*min-width: 100%;
+    /* min-height: 100%;
+    top: 0;
+    /* left: 50%; */
+    /* transform: translate(-50%, 0); */
+}
+
+
+.overlay {
+    position: relative;
+    /* width: 80vw; */
+    /* top: 0;
+    left: 50%; */
+
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.blob {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 20%;
+  z-index: 3;
+  cursor: move;
+}
+
+
+
+@font-face {
+  font-family: Caslon540reg;
+  src: url("assets/Caslon540.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Caslon540;
+  src: url("assets/Caslon540ITALIC.ttf");
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: Theinhardt;
+  src: url("assets/Theinhardt-Regular.otf");
+}
