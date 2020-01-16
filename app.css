@@ -14,7 +14,7 @@ body {
   top: 1%;
   left: 10%;
 
-  font-family: Helvetica;
+  font-family: HelveticaRoundedBold;
   position: absolute;
   color: white;
   font-size: 10vh;
@@ -172,8 +172,8 @@ video {
 
 
 @font-face {
-  font-family: Caslon540reg;
-  src: url("assets/Caslon540.ttf");
+  font-family: HelveticaRoundedBold;
+  src: url("assets/HelveticaRoundedBold.ttf");
   font-weight: normal;
 }
 
