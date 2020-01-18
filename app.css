@@ -45,7 +45,6 @@ body {
 
 
 .infobox_container{
-  position: absolute;
   z-index: 1;
   background-color: black;
   color: white;
@@ -58,7 +57,6 @@ body {
   position: absolute;
   left:1%;
   padding-left: 1%;
-  padding-right: 4%;
   top: 125px;
   width:100%;
   height: 100%;
@@ -73,18 +71,35 @@ body {
   font-weight: normal;
   color: white;
   top: 10vw;
-  font-size: 10vw;
-  line-height: 10vw;
+  font-size: 20vw;
+  line-height: 20vw;
 
 }
 
 .titlechapter1 {
   font-family: Helvetica;
-  position: center;
+  text-align: center;
+}
+
+.titlechapter2 {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.titlechapter3 {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.titlechapter4 {
+  font-family: Helvetica;
+  text-align: center;
 }
 
 .introchapter1 {
   font-family: Helvetica;
+  font-size: 7vw;
+  line-height: 7vw;
 }
 
 .introchapter2 {
