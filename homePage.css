@@ -1,0 +1,654 @@
+
+/*
+@font-face {
+  font-family: 'vcr';
+  src:  url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+*/
+
+* {
+  margin: -5px;
+}
+body,html {
+  background-image: url("ganden/1.jpg");
+  background-color: : white;
+  background-repeat: no-repeat;
+  background-size: 32%;
+  width: 320mm; height: 480mm;
+  top: 40px;
+  left: -10px;
+   }
+
+
+
+/* ----------------------------------------------------------------- */
+
+.flower {
+  left: 120vw; top: 315vw;
+	position:relative;
+	margin:3px;
+}
+.flower img{
+  position: absolute;
+  width: 24vw;
+	vertical-align:bottom;
+}
+.flower:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower2 {
+  left: 70vw; top: 290vw;
+	position:relative;
+	margin:3px;
+}
+.flower2 img{
+  position: absolute;
+  width: 25vw;
+	vertical-align:bottom;
+}
+.flower2:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower2 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower2:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower3 {
+  left: 40vw; top: 340vw;
+	position:relative;
+	margin:3px;
+}
+.flower3 img{
+  position: absolute;
+  width: 22vw;
+	vertical-align:bottom;
+}
+.flower3:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower3 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower3:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower4 {
+  left: 153vw; top: 305vw;
+	position:relative;
+	margin:3px;
+}
+.flower4 img{
+  position: absolute;
+  width: 27vw;
+	vertical-align:bottom;
+}
+.flower4:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower4 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower4:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+.flower5 {
+  left: 210vw; top: 297vw;
+	position:relative;
+	margin:3px;
+}
+.flower5 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower5:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower5 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower5:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+
+.flower6 {
+  left: 260vw; top: 280vw;
+	position:relative;
+	margin:3px;
+}
+.flower6 img{
+  position: absolute;
+  width: 50vw;
+	vertical-align:bottom;
+}
+.flower6:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower6 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower6:hover span {
+  background-color: white;
+	visibility: visible;
+  width: 20%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower7 {
+  left: 380vw; top: 300vw;
+	position:relative;
+	margin:3px;
+}
+.flower7 img{
+  position: absolute;
+  width: 40vw;
+	vertical-align:bottom;
+}
+.flower7:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower7 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower7:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower8 {
+  left: 350vw; top: 180vw;
+	position:relative;
+	margin:3px;
+}
+.flower8 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower8:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower8 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower8:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower9 {
+  left: 430vw; top: 185vw;
+	position:relative;
+	margin:3px;
+}
+.flower9 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower9:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower9 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower9:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower10 {
+  left: 420vw; top: 270vw;
+	position:relative;
+	margin:3px;
+}
+.flower10 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower10:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower10 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower10:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower11 {
+  left: 265vw; top: 80vw;
+	position:relative;
+	margin:3px;
+}
+.flower11 img{
+  position: absolute;
+  width: 12vw;
+	vertical-align:bottom;
+}
+.flower11:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower11 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower11:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 5vw; left: 10vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower12 {
+  left: 330vw; top: 175vw;
+	position:relative;
+	margin:3px;
+}
+.flower12 img{
+  position: absolute;
+  width: 17vw;
+	vertical-align:bottom;
+}
+.flower12:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower12 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower12:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 7vw; left: 10vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower13 {
+  left: 190vw; top: 165vw;
+	position:relative;
+	margin:3px;
+}
+.flower13 img{
+  position: absolute;
+  width: 10vw;
+	vertical-align:bottom;
+}
+.flower13:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower13 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower13:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 5vw; left: 7vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower14 {
+  left: 165vw; top: 110vw;
+	position:relative;
+	margin:3px;
+}
+.flower14 img{
+  position: absolute;
+  width: 10vw;
+	vertical-align:bottom;
+}
+.flower14:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower14 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower14:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 5vw; left: 7vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower15 {
+  left: 313vw; top: 83vw;
+	position:relative;
+	margin:3px;
+}
+.flower15 img{
+  position: absolute;
+  width: 10vw;
+	vertical-align:bottom;
+}
+.flower15:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower15 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower15:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 5vw; left: 7vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower16 {
+  left: 165vw; top: 70vw;
+	position:relative;
+	margin:3px;
+}
+.flower16 img{
+  position: absolute;
+  width: 10vw;
+	vertical-align:bottom;
+}
+.flower16:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower16 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower16:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 5vw; left: 10vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower17 {
+  left: 76vw; top: 130vw;
+	position:relative;
+	margin:3px;
+}
+.flower17 img{
+  position: absolute;
+  width: 13vw;
+	vertical-align:bottom;
+}
+.flower17:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower17 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower17:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 5vw; left: 7vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower18 {
+  left: 165vw; top: 190vw;
+	position:relative;
+	margin:3px;
+}
+.flower18 img{
+  position: absolute;
+  width: 22vw;
+	vertical-align:bottom;
+}
+.flower18:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower18 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower18:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 15vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower19 {
+  left: 435vw; top: 80vw;
+	position:relative;
+	margin:3px;
+}
+.flower19 img{
+  position: absolute;
+  width: 22vw;
+	vertical-align:bottom;
+}
+.flower19:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower19 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower19:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 15vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower20 {
+  left: 405vw; top: 140vw;
+	position:relative;
+	margin:3px;
+}
+.flower20 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower20:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower20 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower20:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower21 {
+  left: 90vw; top: 227vw;
+	position:relative;
+	margin:3px;
+}
+.flower21 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower21:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower21 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower21:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+/* ----------------------------------------------------------------- */
+
+.flower22 {
+  left: 210vw; top: 297vw;
+	position:relative;
+	margin:3px;
+}
+.flower22 img{
+  position: absolute;
+  width: 30vw;
+	vertical-align:bottom;
+}
+.flower22:hover {
+	border:0; /* IE6 needs this to show large image */
+	z-index:1;
+}
+.flower22 span {
+	position:absolute;
+	visibility:hidden;
+}
+.flower22:hover span {
+  background-color: white;
+	visibility:visible;
+  width: 100%;
+  top: 15vw; left: 25vw;
+}
+
+.header{
+font-family: 'KingsCaslonText';
+color: black;
+
+
+}
+
+
+.container-order {list-style: none; width: 800px; margin: 0 auto; text-align: center; padding-top: 40px;}
+.container-order li {padding-bottom: 60px;}
+
+#content, #info, #navi, #imprint {position: fixed; z-index: 40000;}
+#content {
+  top: 15px;
+  left: -10px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+  font-family:'KingsCaslonText'}
+#navi {bottom: 2px; left: 5px; list-style: none;font-size: 12px;}
+#imprint {
+  bottom: 10px;
+  right: 3px;
+  list-style:
+  none;
+  font-size: 10px;
+  font-family:'KingsCaslonText'
+  color: black;
+ }
+
+#navi li, #imprint li {margin-bottom: 3px; padding-bottom: 1px;}
+#navi .active a {border-bottom: 1px solid #000; padding: 0;}
