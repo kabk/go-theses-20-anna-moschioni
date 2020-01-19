@@ -56,17 +56,23 @@ body {
 .title {
   position: fixed;
   left: 50%;
+  top:3%;
+  width: 90%;
   transform: translateX(-50%);
 
   font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
   color: #fff;
   text-align: center;
+  font-size: 0.5em;
+  background-color: rgb(252,224,224);
 }
 
 .title > h1 {
   display: inline-block;
   font-size: 2em;
 }
+
+
 
 .infobuttontext:hover {
   cursor: pointer;
@@ -85,11 +91,16 @@ body {
   display: flex;
   display: none;
   justify-content: space-between;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  background-color: rgb(252,224,224);
+  box-shadow: 0 30px 40px rgba(252,224,224,8);
+
 }
 
 .menu li {
-  color: white;
-  font-size: 1em;
+  color: black;
+  font-size: 1.5em;
   display: inline-block;
 }
 
@@ -105,7 +116,7 @@ a.anchor {
 =========================== */
 
 audio {
-  display:none;
+  display: none;
 }
 
 
@@ -138,6 +149,8 @@ audio {
   display: none;
 }
 
+
+
 .chapter > h1,
 h2 {
   font-family: HelveticaRounded;
@@ -146,6 +159,13 @@ h2 {
 
 .chapter {
   margin-bottom: 150px; /* space between chapters */
+}
+
+.introchapter {
+  font-family: HelveticaRounded;
+  letter-spacing: -0.04em;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 
 p {
