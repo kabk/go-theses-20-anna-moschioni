@@ -65,8 +65,9 @@ body {
   color: black;
   text-align: center;
   font-size: 0.5em;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.05em;
   background-color: rgb(252, 231, 231);
+  border-bottom: 1px solid black;
 
 }
 
@@ -94,10 +95,10 @@ body {
   display: flex;
   display: none;
   justify-content: space-between;
-  padding-top: 3vh;
+  padding-top: 2vh;
   padding-bottom: 2vh;
   background-color: rgb(252, 231, 231);
-  box-shadow: 20px 0px 0px rgba(252, 231, 231,8);
+  border-top: 1px solid black;
 
 }
 
@@ -173,11 +174,11 @@ audio {
 h2 {
   font-family: HelveticaRounded;
   text-align: center;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.05em;
 }
 
 .chapter {
-  margin-bottom: 150px; /* space between chapters */
+  margin-bottom: 130px; /* space between chapters */
 }
 
 .introchapter {
@@ -187,13 +188,6 @@ h2 {
   padding-bottom: 4vw;
 }
 
-.introchapter6 {
-  font-family: HelveticaRounded;
-  letter-spacing: -0.04em;
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-  font-size: 5px;
-}
 
 p {
   text-indent: 2em;
