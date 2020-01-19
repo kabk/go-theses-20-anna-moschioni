@@ -55,17 +55,19 @@ body {
 
 .title {
   position: fixed;
-  padding: 1%;
+  padding: 2%;
   left: 50%;
   top:0%;
   width: 100%;
   transform: translateX(-50%);
 
   font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
-  color: #fff;
+  color: black;
   text-align: center;
   font-size: 0.5em;
+  letter-spacing: -0.04em;
   background-color: rgb(252, 231, 231);
+
 }
 
 .title > h1 {
@@ -142,10 +144,9 @@ audio {
   /* display: none; */
 }
 
-.gifbox > img {
+/*.gifbox > img {
   width: 100%;
   background-color: #000; /* fallback color if gif doesn't load */
-}
 
 /* =========================
       MAIN TEXT SECTION
@@ -222,147 +223,3 @@ p {
   }
 }
 */
-
-/* .infobuttonbox {
-  z-index: 3;
-  position: absolute;
-  top: 8%;
-  left: 4%;
-  width: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  cursor: pointer;
-} */
-
-/*
-.infobuttonbox:hover {
-}
-
-.infobox_container {
-  z-index: 1;
-  background-color: black;
-  color: white;
-  width: 100%;
-}
-
-.infobox {
-  position: absolute;
-  left: 3%;
-  top: 125px;
-  width: 97%;
-  height: 100%;
-}
-
-.chapter1 {
-  margin: 1.5vw;
-  padding: 0px;
-  font-family: Helvetica;
-  font-weight: normal;
-  color: white;
-  top: 12px;
-  font-size: 20vw;
-  line-height: 20vw;
-}
-
-.titlechapter1 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.titlechapter2 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.titlechapter3 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.titlechapter4 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.subtitlechapter1 {
-  font-family: GaramondRegular;
-  text-align: center;
-}
-
-.subtitlechapter2 {
-  font-family: GaramondRegular;
-  text-align: center;
-}
-
-.subtitlechapter3 {
-  font-family: Garamond;
-  text-align: center;
-}
-
-.subtitlechapter4 {
-  font-family: GaramondRegular;
-  text-align: center;
-}
-
-.introchapter1 {
-  font-family: HelveticaRounded;
-  font-size: 33px;
-  line-height: 33px;
-}
-
-.introchapter2 {
-  font-family: HelveticaRounded;
-  font-size: 7px;
-  line-height: 7vw;
-}
-
-.introchapter3 {
-  font-family: HelveticaRounded;
-  font-size: 6.5vw;
-  line-height: 7vw;
-}
-
-.introchapter4 {
-  font-family: HelveticaRounded;
-  font-size: 6.5vw;
-  line-height: 7vw;
-}
-
-.infobuttonimage {
-  position: absolute;
-  width: 100%;
-  transform: rotate(-25deg);
-}
-
-.infobuttontext {
-  margin: 0px;
-  padding: 0px;
-  left: 6vw;
-  width: 15vw;
-  position: absolute;
-  color: white;
-  font-family: Helvetica;
-  font-size: 3vw;
-}
-
-.overlay {
-  position: relative;
-  width: 80vw;
-  top: 0;
-  left: 50%;
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-.blob {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  width: 20%;
-  z-index: 3;
-  cursor: move;
-} */
