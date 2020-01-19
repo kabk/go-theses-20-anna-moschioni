@@ -109,7 +109,7 @@ body {
   transform: translateX(-50%);
 
   font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
-  color: #fff;
+  color: black;
   text-align: center;
   font-size: 0.7em;
   background-color: rgb(252, 231, 231);
@@ -117,7 +117,7 @@ body {
 
 .menu li {
   color: black;
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: inline-block;
 }
 
@@ -144,9 +144,10 @@ audio {
   /* display: none; */
 }
 
-/*.gifbox > img {
+*.gifbox > img {
   width: 100%;
   background-color: #000; /* fallback color if gif doesn't load */
+}
 
 /* =========================
       MAIN TEXT SECTION
@@ -186,9 +187,26 @@ h2 {
   padding-bottom: 4vw;
 }
 
+.introchapter6 {
+  font-family: HelveticaRounded;
+  letter-spacing: -0.04em;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  font-size: 5px;
+}
+
 p {
   text-indent: 2em;
 }
+
+ol {
+  padding: 6vw;
+}
+
+ul {
+  padding: 6vw;
+}
+
 
 /* =========================
       RESPONSIVE SECTION
@@ -197,7 +215,7 @@ p {
 /* TODO: Responsiveness (It should stay last) */
 @media only screen and (max-width: 900px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
   .infobox {
     padding-top: 30vh; /* compensate for the fixed title */
@@ -206,7 +224,7 @@ p {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 16px;
+    font-size: 19px;
   }
 }
 
