@@ -55,16 +55,17 @@ body {
 
 .title {
   position: fixed;
+  padding: 1%;
   left: 50%;
-  top:3%;
-  width: 90%;
+  top:0%;
+  width: 100%;
   transform: translateX(-50%);
 
   font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
   color: #fff;
   text-align: center;
   font-size: 0.5em;
-  background-color: rgb(252,224,224);
+  background-color: rgb(252, 231, 231);
 }
 
 .title > h1 {
@@ -91,11 +92,25 @@ body {
   display: flex;
   display: none;
   justify-content: space-between;
-  padding-top: 2vh;
-  padding-bottom: 1vh;
-  background-color: rgb(252,224,224);
-  box-shadow: 0 30px 40px rgba(252,224,224,8);
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  background-color: rgb(252, 231, 231);
+  box-shadow: 20px 0px 0px rgba(252, 231, 231,8);
 
+}
+
+.tableofcontents {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 0.7em;
+  background-color: rgb(252, 231, 231);
 }
 
 .menu li {
@@ -142,9 +157,10 @@ audio {
   padding-top: 15vh; /* compensate for the fixed title */
   padding-left: 6vw;
   padding-right: 6vw;
+  padding-bottom: 10vh;
 
   max-width: 900px;
-  background-color: rgb(252,224,224);
+  background-color: rgb(252, 231, 231);
   color: black;
   display: none;
 }
@@ -155,6 +171,7 @@ audio {
 h2 {
   font-family: HelveticaRounded;
   text-align: center;
+  letter-spacing: -0.04em;
 }
 
 .chapter {
@@ -182,7 +199,7 @@ p {
     font-size: 18px;
   }
   .infobox {
-    padding-top: 50vh; /* compensate for the fixed title */
+    padding-top: 30vh; /* compensate for the fixed title */
   }
 }
 
