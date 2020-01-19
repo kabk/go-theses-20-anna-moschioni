@@ -1,32 +1,192 @@
-body {
-    background: black;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+/*TODO:
+
+– Make all chapters divs, e.g <div class='chapter1'></div>
+– Make all paragraphs in a seperate <p> tag
+*/
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: HelveticaRounded;
+  src: url('assets/HelveticaRounded.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: GaramondRegular;
+  src: url('assets/GaramondRegular.ttf');
+  font-weight: normal;
+}
+
+
+html {
+  width: 100%;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  background: #000;
+  font-family: GaramondRegular, 'Times New Roman', Times, serif;
+  line-height: 1.4;
+}
+
+.container {
+  overflow-y: hidden;
+}
+
+/* =========================
+      TITLE SECTION
+=========================== */
 
 .title {
-  z-index: 2;
-  margin: 1%;
-  padding: 1%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 
-  top: 1%;
-  left: 10%;
+  font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
+  color: #fff;
+  text-align: center;
+}
 
-  font-family: HelveticaRoundedBold;
-  position: absolute;
+.title > h1 {
+  display: inline-block;
+  font-size: 2em;
+}
+
+.infobuttontext:hover {
+  cursor: pointer;
+}
+
+.title > .infobuttonimage {
+  display: inline-block;
+  height: 4em;
+}
+
+.title > img {
+  vertical-align: -70%;
+}
+
+.menu {
+  display: flex;
+  display: none;
+  justify-content: space-between;
+}
+
+.menu li {
   color: white;
-  font-size: 10vh;
-  line-height: 10vh;
-  transform-origin: 0% 0%;
+  font-size: 1em;
+  display: inline-block;
+}
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+/* =========================
+      GIF BOX SECTION
+=========================== */
+
+audio {
+  display:none;
 }
 
 
+.gifbox {
+  position: relative;
+  width: 100%;
+  z-index: -9999;
+  /* display: none; */
+}
 
+.gifbox > img {
+  width: 100%;
+  background-color: #000; /* fallback color if gif doesn't load */
+}
 
-.infobuttonbox{
+/* =========================
+      MAIN TEXT SECTION
+=========================== */
+.infobox {
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding-top: 15vh; /* compensate for the fixed title */
+  padding-left: 6vw;
+  padding-right: 6vw;
+
+  max-width: 900px;
+  background-color: rgb(252,224,224);
+  color: black;
+  display: none;
+}
+
+.chapter > h1,
+h2 {
+  font-family: HelveticaRounded;
+  text-align: center;
+}
+
+.chapter {
+  margin-bottom: 150px; /* space between chapters */
+}
+
+p {
+  text-indent: 2em;
+}
+
+/* =========================
+      RESPONSIVE SECTION
+=========================== */
+
+/* TODO: Responsiveness (It should stay last) */
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+  .infobox {
+    padding-top: 50vh; /* compensate for the fixed title */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/*
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
+*/
+
+/* .infobuttonbox {
   z-index: 3;
   position: absolute;
   top: 8%;
@@ -36,44 +196,36 @@ body {
   align-items: center;
   justify-content: left;
   cursor: pointer;
+} */
+
+/*
+.infobuttonbox:hover {
 }
 
-.infobuttonbox:hover{
-
-}
-
-
-
-.infobox_container{
+.infobox_container {
   z-index: 1;
   background-color: black;
   color: white;
   width: 100%;
-
-
 }
 
-.infobox{
+.infobox {
   position: absolute;
-  left:1%;
-  padding-left: 1%;
+  left: 3%;
   top: 125px;
-  width:100%;
+  width: 97%;
   height: 100%;
-
 }
 
-
-.chapter1{
+.chapter1 {
   margin: 1.5vw;
   padding: 0px;
   font-family: Helvetica;
   font-weight: normal;
   color: white;
-  top: 10vw;
+  top: 12px;
   font-size: 20vw;
   line-height: 20vw;
-
 }
 
 .titlechapter1 {
@@ -82,35 +234,57 @@ body {
 }
 
 .titlechapter2 {
-  font-family: Helvetica;
+  font-family: HelveticaRounded;
   text-align: center;
 }
 
 .titlechapter3 {
-  font-family: Helvetica;
+  font-family: HelveticaRounded;
   text-align: center;
 }
 
 .titlechapter4 {
-  font-family: Helvetica;
+  font-family: HelveticaRounded;
+  text-align: center;
+}
+
+.subtitlechapter1 {
+  font-family: GaramondRegular;
+  text-align: center;
+}
+
+.subtitlechapter2 {
+  font-family: GaramondRegular;
+  text-align: center;
+}
+
+.subtitlechapter3 {
+  font-family: Garamond;
+  text-align: center;
+}
+
+.subtitlechapter4 {
+  font-family: GaramondRegular;
   text-align: center;
 }
 
 .introchapter1 {
   font-family: HelveticaRounded;
-  font-size: 6.5vw;
-  line-height: 7vw;
+  font-size: 33px;
+  line-height: 33px;
 }
 
 .introchapter2 {
   font-family: HelveticaRounded;
-  font-size: 6.5vw;
-  line-height: 7vw;}
+  font-size: 7px;
+  line-height: 7vw;
+}
 
 .introchapter3 {
   font-family: HelveticaRounded;
   font-size: 6.5vw;
-  line-height: 7vw;}
+  line-height: 7vw;
+}
 
 .introchapter4 {
   font-family: HelveticaRounded;
@@ -118,8 +292,7 @@ body {
   line-height: 7vw;
 }
 
-
-.infobuttonimage{
+.infobuttonimage {
   position: absolute;
   width: 100%;
   transform: rotate(-25deg);
@@ -128,59 +301,24 @@ body {
 .infobuttontext {
   margin: 0px;
   padding: 0px;
-  left:6vw;
+  left: 6vw;
   width: 15vw;
   position: absolute;
   color: white;
   font-family: Helvetica;
   font-size: 3vw;
-
-
 }
-
-
-.gif {
-
-    display: inline-block;
-    top:0vh;
-    position: fixed;
-    position: center;
-    background: black;
-    overflow: hidden;
-}
-
-.gif1 {
-    width: 100%;
-    position: fixed;
-    display: block;
-}
-
-.gif2 {
-    width: 100%;
-    top: 75vw;
-    position: fixed;
-    display: block;
-}
-
-.gif3 {
-    width: 100%;
-    top: 150vw;
-    position: fixed;
-    display: block;
-}
-
 
 .overlay {
-    position: relative;
-    /* width: 80vw; */
-    /* top: 0;
-    left: 50%; */
-
-    display: none;
+  position: relative;
+  width: 80vw;
+  top: 0;
+  left: 50%;
+  display: none;
 }
 
 .visible {
-    display: block;
+  display: block;
 }
 
 .blob {
@@ -190,23 +328,4 @@ body {
   width: 20%;
   z-index: 3;
   cursor: move;
-}
-
-
-
-@font-face {
-  font-family: HelveticaRounded;
-  src: url("assets/HelveticaRounded.ttf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: Caslon540;
-  src: url("assets/Caslon540ITALIC.ttf");
-  font-weight: italic;
-}
-
-@font-face {
-  font-family: Theinhardt;
-  src: url("assets/Theinhardt-Regular.otf");
-}
+} */
