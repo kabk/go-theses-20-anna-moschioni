@@ -1,9 +1,7 @@
-/*TODO: 
+/*TODO:
 
 – Make all chapters divs, e.g <div class='chapter1'></div>
 – Make all paragraphs in a seperate <p> tag
-– Add class 'chapter' to all chapters, so it "chapter1" -> "chapter chapter1", "chapter chapter2", ...
-– Add anchors for your chapters above the h1 tag like this: <a id="chapter2" class="anchor"></a>
 */
 
 * {
@@ -34,10 +32,6 @@ a:hover {
   font-weight: normal;
 }
 
-/* @font-face {
-  font-family: Theinhardt;
-  src: url('assets/Theinhardt-Regular.otf');
-} */
 
 html {
   width: 100%;
@@ -61,18 +55,28 @@ body {
 
 .title {
   position: fixed;
+  padding: 2%;
   left: 50%;
+  top:0%;
+  width: 100%;
   transform: translateX(-50%);
 
   font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
-  color: #fff;
+  color: black;
   text-align: center;
+  font-size: 0.5em;
+  letter-spacing: -0.05em;
+  background-color: rgb(252, 231, 231);
+  border-bottom: 1px solid black;
+
 }
 
 .title > h1 {
   display: inline-block;
   font-size: 2em;
 }
+
+
 
 .infobuttontext:hover {
   cursor: pointer;
@@ -91,24 +95,49 @@ body {
   display: flex;
   display: none;
   justify-content: space-between;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: rgb(252, 231, 231);
+  border-top: 1px solid black;
+  letter-spacing: -0.04em;
+
+}
+
+.tableofcontents {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  font-family: HelveticaRounded, 'Arial Rounded MT Bold', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 0.7em;
+  background-color: rgb(252, 231, 231);
 }
 
 .menu li {
-  color: white;
-  font-size: 1em;
+  color: black;
+  font-size: 1.2em;
   display: inline-block;
 }
 
 a.anchor {
   display: block;
   position: relative;
-  top: -250px;
+  top: -160px;
   visibility: hidden;
 }
 
 /* =========================
       GIF BOX SECTION
 =========================== */
+
+audio {
+  display: none;
+}
+
 
 .gifbox {
   position: relative;
@@ -117,7 +146,7 @@ a.anchor {
   /* display: none; */
 }
 
-.gifbox > img {
+*.gifbox > img {
   width: 100%;
   background-color: #000; /* fallback color if gif doesn't load */
 }
@@ -130,27 +159,55 @@ a.anchor {
   left: 0;
   right: 0;
   padding-top: 15vh; /* compensate for the fixed title */
-  padding-left: 6vw;
-  padding-right: 6vw;
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
+  padding-bottom: 10vh;
 
-  max-width: 900px;
-  color: #fff;
+  max-width: 100%;
+  background-color: rgb(252, 231, 231);
+  color: black;
   display: none;
 }
 
-.chapter > h1,
-h2 {
+
+
+h1 {
   font-family: HelveticaRounded;
   text-align: center;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-family: GaramondRegular;
+  text-align: center;
+  letter-spacing: -0.02em;
+  padding: 1%;
 }
 
 .chapter {
-  margin-bottom: 100px; /* space between chapters */
+  margin-bottom: 130px; /* space between chapters */
 }
+
+.introchapter {
+  font-family: HelveticaRounded;
+  letter-spacing: -0.04em;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
 
 p {
   text-indent: 2em;
 }
+
+ol {
+  padding: 6.5vw;
+}
+
+ul {
+  padding: 6.5vw;
+}
+
 
 /* =========================
       RESPONSIVE SECTION
@@ -159,16 +216,16 @@ p {
 /* TODO: Responsiveness (It should stay last) */
 @media only screen and (max-width: 900px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
   .infobox {
-    padding-top: 50vh; /* compensate for the fixed title */
+    padding-top: 30vh; /* compensate for the fixed title */
   }
 }
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 16px;
+    font-size: 19px;
   }
 }
 
@@ -185,147 +242,3 @@ p {
   }
 }
 */
-
-/* .infobuttonbox {
-  z-index: 3;
-  position: absolute;
-  top: 8%;
-  left: 4%;
-  width: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  cursor: pointer;
-} */
-
-/*
-.infobuttonbox:hover {
-}
-
-.infobox_container {
-  z-index: 1;
-  background-color: black;
-  color: white;
-  width: 100%;
-}
-
-.infobox {
-  position: absolute;
-  left: 3%;
-  top: 125px;
-  width: 97%;
-  height: 100%;
-}
-
-.chapter1 {
-  margin: 1.5vw;
-  padding: 0px;
-  font-family: Helvetica;
-  font-weight: normal;
-  color: white;
-  top: 12px;
-  font-size: 20vw;
-  line-height: 20vw;
-}
-
-.titlechapter1 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.titlechapter2 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.titlechapter3 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.titlechapter4 {
-  font-family: HelveticaRounded;
-  text-align: center;
-}
-
-.subtitlechapter1 {
-  font-family: GaramondRegular;
-  text-align: center;
-}
-
-.subtitlechapter2 {
-  font-family: GaramondRegular;
-  text-align: center;
-}
-
-.subtitlechapter3 {
-  font-family: Garamond;
-  text-align: center;
-}
-
-.subtitlechapter4 {
-  font-family: GaramondRegular;
-  text-align: center;
-}
-
-.introchapter1 {
-  font-family: HelveticaRounded;
-  font-size: 33px;
-  line-height: 33px;
-}
-
-.introchapter2 {
-  font-family: HelveticaRounded;
-  font-size: 7px;
-  line-height: 7vw;
-}
-
-.introchapter3 {
-  font-family: HelveticaRounded;
-  font-size: 6.5vw;
-  line-height: 7vw;
-}
-
-.introchapter4 {
-  font-family: HelveticaRounded;
-  font-size: 6.5vw;
-  line-height: 7vw;
-}
-
-.infobuttonimage {
-  position: absolute;
-  width: 100%;
-  transform: rotate(-25deg);
-}
-
-.infobuttontext {
-  margin: 0px;
-  padding: 0px;
-  left: 6vw;
-  width: 15vw;
-  position: absolute;
-  color: white;
-  font-family: Helvetica;
-  font-size: 3vw;
-}
-
-.overlay {
-  position: relative;
-  width: 80vw; 
-  top: 0;
-  left: 50%;
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-.blob {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  width: 20%;
-  z-index: 3;
-  cursor: move;
-} */
